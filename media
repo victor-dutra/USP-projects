@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(int argc, char * argv[] ){
+ int a, b, c;
+ int media;
+printf("coloque nota1");
+scanf ("%d", &a);
+
+printf("coloque nota2");
+scanf ("%d", &b);
+
+printf("coloque nota3");
+scanf ("%d", &c);
+
+media= (a + b + c)/3;
+
+if (media>=5){
+printf("aprovado parabens");}
+else{
+printf("reprovado");}
+
+return 0;
+}
