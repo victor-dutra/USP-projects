@@ -13,23 +13,21 @@ scanf ("%d", &b);
 printf("coloque c");
 scanf ("%d", &c);
 
-delta=(b*b -4*a*c);
+delta=((b*b) - (4*a*c));
 
-if(delta=0){
+if(delta==0){
     x1=x2= (-b/(2*a));
 printf("raiz igual a %d", x1);
 }
 
-else{
-    if(delta>0){
+if(delta>0){
     x1=((-b + sqrt(delta))/2);
     x2=((-b - sqrt(delta))/2);
         printf("x1 igual a %d", x1);
-        printf("x2 igual a %d", x2);
-    }
-
-    else{
-        printf("raiz n real");}
+        printf(" x2 igual a %d", x2);
 }
+if(delta<0){
+        printf("raiz n real");}
+
 return 0;
 }
