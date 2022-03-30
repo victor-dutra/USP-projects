@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(int argc, char * argv[] ){
+    int a, b, area;
+
+printf("escreva o valor numerico da base");
+scanf ("%d", &a);
+printf("escreva o valor numerico da altura");
+scanf ("%d", &b);
+
+area=(a*b)/2;
+
+printf ("a area seria %d", area);
+
+return 0;
+
+}
