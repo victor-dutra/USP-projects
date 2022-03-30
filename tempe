@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(int argc, char * argv[] ){
+     int a, r;
+    printf("coloque a temp em celsius");
+     scanf ("%d", &a);
+    r= ( a*(9/5)+32);
+
+    printf("essa e a em farenheint %d", r);
+
+return 0;
+
+
+}
