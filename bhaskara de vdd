@@ -1,34 +1,57 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
-int main(int argc, char * argv[] ){
 
-float a, b, c, x1, x2;
-float delta;
-printf("coloque a");
-scanf ("%f", &a);
+int main()
+{
 
-printf("coloque b");
-scanf ("%f", &b);
+            // Declaração das Variaveis
 
-printf("coloque c");
+    float a, b, c, x1, x2;
+    float dlt;
 
-scanf ("%f", &c);
+            // Processamento do Delta  // delta = b*b -4ac
 
-delta=(b*b) - 4*a*c;
+        printf("Coloque o A: ");
+        scanf("%f", &a);
 
-if(delta==0){
-    x1=x2= (-b/(2*a));
-printf("raiz igual a %.2f", x1);
-}
+        printf("Coloque o B: ");
+        scanf("%f", &b);
 
-if(delta>0){
-    x1=((-b + sqrt(delta))/2)/10;
-    x2=((-b - sqrt(delta))/2)/10;
-        printf("x1 igual a %.2f", x1);
-        printf(" x2 igual a %.2f", x2);
-}
-if(delta<0){
-        printf("raiz n real");}
+        printf("Coloque o C: ");
+        scanf("%f", &c);
 
-return 0;
+            // Formula Delta
+
+        dlt = (b*b)-4*a*c;
+        x1 = ((-b + sqrt(dlt))/(2*a));
+        x2 = ((-b - sqrt(dlt))/(2*a));
+
+            //Se delta for 0
+
+    if(dlt==0)
+        {
+
+        x1=x2=(-b/(2*a));
+        printf("A raiz eh igual: %.2f \n", x1);
+
+        }
+
+            //Se delta for maior que 0
+
+    if(dlt>0)
+        {
+
+        printf("A raiz de x1 eh igual a: %.2f \n", x1);
+        printf("A raiz de x2 eh igual a: %.2f \n", x2);
+
+        }
+
+            //Se delta for menor que 0
+
+    if (dlt<0)
+        {
+        printf("A raiz eh invalida: ");}
+
+    return 0;
 }
