@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(int argc, char* argv[]){
+    int np, na, c, p;
+  
+//declaracao de variaveis e formulas
+printf("numeros de pernas");
+scanf("%d", &np );
+
+printf("numero de animais");
+scanf("%d", &na);
+//pedir e receber as variaveis
+    c= ((np/2)-na);
+    p= (na-c);
+
+printf ("o numero de coelhos seria %d ", c);
+printf ("o numero de patos seria %d", p);
+
+//mostrar os resultados
+
+return 0;
+
+}
